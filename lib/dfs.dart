@@ -1,4 +1,4 @@
-import './node.dart';
+import 'node.dart';
 
 void main() {
   //creating nodes

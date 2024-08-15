@@ -26,8 +26,8 @@
 //Futures
 //hint classes
 
-import '../bin/car.dart';
-import '../bin/person.dart';
+import 'car.dart';
+import 'person.dart';
 
 void main(List<String> arguments) async {
   List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];

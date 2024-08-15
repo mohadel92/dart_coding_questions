@@ -1,4 +1,4 @@
-import '../bin/dart_playground.dart';
+import 'dart_playground.dart';
 
 class Car {
   final int? year;
