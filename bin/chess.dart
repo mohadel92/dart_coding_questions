@@ -7,6 +7,19 @@ For cell1 = "A1" and cell2 = "C3", the output should be
 solution(cell1, cell2) = true.
 */
 bool solution(String cell1, String cell2) {
+  // Convert column letter to a number (A -> 1, B -> 2, ..., H -> 8)
+  int col1 = cell1[0].toLowerCase().codeUnitAt(0) - 'a'.codeUnitAt(0) + 1;
+  int col2 = cell2[0].toLowerCase().codeUnitAt(0) - 'a'.codeUnitAt(0) + 1;
+
+  // Extract the row number
+  int row1 = int.parse(cell1[1]);
+  int row2 = int.parse(cell2[1]);
+
+  // Check if both cells have the same color
+  return (col1 + row1) % 2 == (col2 + row2) % 2;
+}
+
+bool badSolution(String cell1, String cell2) {
   // var cellMap = {
   //     "a" : 0,
   //     "b" : 1,

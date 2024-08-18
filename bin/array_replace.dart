@@ -13,5 +13,6 @@ List<int> solution(
       inputArray[i] = substitutionElem;
     }
   }
+
   return inputArray;
 }
